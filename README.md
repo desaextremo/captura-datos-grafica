@@ -37,7 +37,7 @@
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoShort, "Captura valor short");
      ```
      
- * **_leeInt_**: Convierte el dato ingresado a un valor int, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el          cuadro de dialogo corresponda con un numero entero **_(int)_**.
+ * **_leeInt_**: Convierte el dato ingresado a un valor int, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en      el cuadro de dialogo corresponda con un numero entero **_(int)_**.
     **_Firma:_**
     ```
     static int	leeInt(String mensaje, String titulo, int icono)
@@ -47,5 +47,29 @@
      ```
      int datoInt;
      datoInt = CapturaDatosGrafica.leeInt("Ingrese un valor int", "Captura dato int", 1);
-                    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoInt, "Captura valor int");
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoInt, "Captura valor int");
      ```
+     
+ * **_leeLong_**: Convierte el dato ingresado a un valor long, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el el valor registrado en el cuadro de dialogo corresponda con un numero **_(long)_**.
+    **_Firma:_**
+    ```
+    static long	leeLong(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+     ```
+     long datoLong;
+     datoLong = CapturaDatosGrafica.leeLong("Ingrese un valor long", "Captura dato long", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoLong, "Captura valor long");
+     
+  * **_leeFloat_**: Convierte el dato ingresado a un valor float, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el cuadro de dialogo corresponda con un numero **_(float)_**.
+    **_Firma:_**
+    ```
+    static float	leeFloat(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+     ```
+     long datoLong;
+     datoFloat = CapturaDatosGrafica.leeFloat("Ingrese un valor float", "Captura dato float", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoFloat, "Captura valor float");
