@@ -25,6 +25,7 @@
      ```
 
  * **_leeShort_**: Convierte el dato ingresado a un valor short, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado      en el cuadro de dialogo corresponda con un numero **_(short)_**.
+    
     **_Firma:_**
     ```
     static short	leeShort(String mensaje, String titulo, int icono)
@@ -38,6 +39,7 @@
      ```
      
  * **_leeInt_**: Convierte el dato ingresado a un valor int, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en      el cuadro de dialogo corresponda con un numero entero **_(int)_**.
+    
     **_Firma:_**
     ```
     static int	leeInt(String mensaje, String titulo, int icono)
@@ -51,6 +53,7 @@
      ```
      
  * **_leeLong_**: Convierte el dato ingresado a un valor long, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el el valor registrado en el cuadro de dialogo corresponda con un numero **_(long)_**.
+    
     **_Firma:_**
     ```
     static long	leeLong(String mensaje, String titulo, int icono)
@@ -62,14 +65,110 @@
      datoLong = CapturaDatosGrafica.leeLong("Ingrese un valor long", "Captura dato long", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoLong, "Captura valor long");
      
-  * **_leeFloat_**: Convierte el dato ingresado a un valor float, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el cuadro de dialogo corresponda con un numero **_(float)_**.
+  * **_leeFloat_**: Convierte el dato ingresado a un valor float, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor               registrado en el cuadro de dialogo corresponda con un numero **_(float)_**.
+    
     **_Firma:_**
     ```
     static float	leeFloat(String mensaje, String titulo, int icono)
     ```
 
    **_Ejemplo de uso:_**
-     ```
+    ```
      long datoLong;
      datoFloat = CapturaDatosGrafica.leeFloat("Ingrese un valor float", "Captura dato float", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoFloat, "Captura valor float");
+     ``` 
+  
+   * **_leeDouble_**: Convierte el dato ingresado a un valor double, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el el valor registrado en el cuadro de dialogo corresponda con un numero **_(double)_**.
+    
+    **_Firma:_**
+    ```
+    static double	leeDouble(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     double datoDouble;
+     datoDouble = CapturaDatosGrafica.leeDouble("Ingrese un valor double", "Captura dato double", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoDouble, "Captura valor double");
+     ```
+     
+   * **_leeBoolean_**: Devuelve un valor **_boolean_** dependiendo de la selcccion del usuario en el cuadro de dialogo El valor por defecto es **_false_**.
+    
+    **_Firma:_**
+    ```
+    static boolean leeBoolean(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     boolean datoBoolean;
+     datoBoolean = CapturaDatosGrafica.leeBoolean("Ingrese un valor boolean", "Captura dato boolean", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoBoolean, "Captura valor boolean");
+     ```
+     
+   * **_leeChar_**: Devuelve el dato ingresado a un valor **_char_**. Dado que **_JOptionPane.showInputDialog_** permite el ingreso de una cadena de caracteres y no es posible      limitar la longitud sin modificar el comportamiento por defecto.
+    
+    **_Firma:_**
+    ```
+    static char leeChar(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     char datoChar;
+     datoChar = CapturaDatosGrafica.leeChar("Ingrese un valor char", "Captura dato char", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoChar, "Captura valor char");
+     ```
+     
+   * **_leeString_**: Devuelve el dato ingresado, controlando excepcion de tipo **_NullPointerException_** e ingresando en un ciclo hasta que se ingrese informacion en el cuadro    de dialogo.
+    
+    **_Firma:_**
+    ```
+    static String	leeString(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     String datoString;
+     datoString = CapturaDatosGrafica.leeString("Ingrese un valor String", "Captura dato String", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoString, "Captura valor String");
+     ```
+   
+   * **_muestraMensaje_**: Presenta un cuadro de mensaje al usuario, haciendo uso del metodo *__JOptionPane.showMessageDialog_**.
+    
+    **_Firma:_**
+    ```
+    static void	muestraMensaje(String mensaje, String titulo)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     String nombre;
+     nombre = CapturaDatosGrafica.leeString("Cual es tu nombre:", "Nombre", 1);
+     CapturaDatosGrafica.muestraMensaje("Hola " + nombre, "Saludar");
+     ```
+     
+   * **_presentaMenu_**: Presenta cuadro de dialogo con un menu de opciones.
+    
+    **_Firma:_**
+    ```
+    static int	presentaMenu(String textoMenu, String titulo, int limiteInferior, int limiteSuperior)
+    ```
+
+   **_Ejemplo de uso:_**
+    ```
+     int opcion = 0;
+     String menuOpciones = "1 byte \n"
+                + "2 short \n"
+                + "3 int \n"
+                + "4 long \n"
+                + "5 float \n"
+                + "6 double \n"
+                + "7 boolean \n"
+                + "8 char \n"
+                + "9 String \n"
+                + "10 Terminar\n";
+
+   opcion = CapturaDatosGrafica.presentaMenu(menuOpciones, "Menu de opciones", 1, 10);
+     ```
