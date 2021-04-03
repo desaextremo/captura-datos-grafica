@@ -10,8 +10,7 @@
  
  ## Listado de métodos
  
- * **_leeByte_**: Convierte el dato ingresado a un valor byte controlando excepcion de tipo **NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el 
-cuadro de dialogo corresponda con un numero **_(byte)_**.
+ * **_leeByte_**: Convierte el dato ingresado a un valor byte controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el cuadro de dialogo corresponda con un numero **_(byte)_**.
 
     **_Firma:_**
     ```
@@ -23,4 +22,30 @@ cuadro de dialogo corresponda con un numero **_(byte)_**.
      byte datoByte;
      datoByte = CapturaDatosGrafica.leeByte("Ingrese un valor byte", "Captura dato byte", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoByte, "Captura valor byte");
+     ```
+
+ * **_leeShort_**: Convierte el dato ingresado a un valor short, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado      en el cuadro de dialogo corresponda con un numero **_(short)_**.
+    **_Firma:_**
+    ```
+    static short	leeShort(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+     ```
+     short datoShort;
+     datoShort = CapturaDatosGrafica.leeShort("Ingrese un valor short", "Captura dato short", 1);
+     CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoShort, "Captura valor short");
+     ```
+     
+ * **_leeInt_**: Convierte el dato ingresado a un valor int, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en el          cuadro de dialogo corresponda con un numero entero **_(int)_**.
+    **_Firma:_**
+    ```
+    static int	leeInt(String mensaje, String titulo, int icono)
+    ```
+
+   **_Ejemplo de uso:_**
+     ```
+     int datoInt;
+     datoInt = CapturaDatosGrafica.leeInt("Ingrese un valor int", "Captura dato int", 1);
+                    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoInt, "Captura valor int");
      ```
