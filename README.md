@@ -23,6 +23,14 @@
      datoByte = CapturaDatosGrafica.leeByte("Ingrese un valor byte", "Captura dato byte", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoByte, "Captura valor byte");
      ```
+     <p align="center">
+      <img src="images/byte1.png">
+     </p>
+     
+     <p align="center">
+      <img src="images/byte2.png">
+     </p>
+     
 
  * **_leeShort_**: Convierte el dato ingresado a un valor short, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado      en el cuadro de dialogo corresponda con un numero **_(short)_**.
     
@@ -38,6 +46,14 @@
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoShort, "Captura valor short");
      ```
      
+     <p align="center">
+      <img src="images/short1.png">
+     </p>
+     
+     <p align="center">
+      <img src="images/short2.png">
+     </p>
+     
  * **_leeInt_**: Convierte el dato ingresado a un valor int, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor registrado en      el cuadro de dialogo corresponda con un numero entero **_(int)_**.
     
     **_Firma:_**
@@ -51,6 +67,13 @@
      datoInt = CapturaDatosGrafica.leeInt("Ingrese un valor int", "Captura dato int", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoInt, "Captura valor int");
      ```
+     <p align="center">
+      <img src="images/int1.png">
+     </p>
+     
+     <p align="center">
+      <img src="images/int2.png">
+     </p>
      
  * **_leeLong_**: Convierte el dato ingresado a un valor long, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el el valor registrado en el cuadro de dialogo corresponda con un numero **_(long)_**.
     
@@ -65,6 +88,14 @@
      datoLong = CapturaDatosGrafica.leeLong("Ingrese un valor long", "Captura dato long", 1);
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoLong, "Captura valor long");
      
+     <p align="center">
+      <img src="images/long1.png">
+     </p>
+     
+     <p align="center">
+      <img src="images/long2.png">
+     </p>
+     
  * **_leeFloat_**: Convierte el dato ingresado a un valor float, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el valor               registrado en el cuadro de dialogo corresponda con un numero **_(float)_**.
     
     **_Firma:_**
@@ -75,11 +106,19 @@
    **_Ejemplo de uso:_**
    
    ```
-   long datoLong;
+   long datoFloat;
    datoFloat = CapturaDatosGrafica.leeFloat("Ingrese un valor float", "Captura dato float", 1);
    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoFloat, "Captura valor float");
    ``` 
   
+  <p align="center">
+      <img src="images/float1.png">
+   </p>
+
+   <p align="center">
+    <img src="images/float2.png">
+   </p>
+     
  * **_leeDouble_**: Convierte el dato ingresado a un valor double, controlando excepcion de tipo **_NumberFormatException_** e ingresando en un ciclo hasta que el el valor  
        registrado en el cuadro de dialogo corresponda con un numero **_(double)_**.
     
@@ -94,7 +133,15 @@
    datoDouble = CapturaDatosGrafica.leeDouble("Ingrese un valor double", "Captura dato double", 1);
    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoDouble, "Captura valor double");
    ```
-     
+   
+    <p align="center">
+      <img src="images/double1.png">
+   </p>
+
+   <p align="center">
+    <img src="images/double2.png">
+   </p>
+   
  * **_leeBoolean_**: Devuelve un valor **_boolean_** dependiendo de la selcccion del usuario en el cuadro de dialogo El valor por defecto es **_false_**.
     
     **_Firma:_**
@@ -109,6 +156,14 @@
      CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoBoolean, "Captura valor boolean");
      ```
      
+     <p align="center">
+      <img src="images/boolean1.png">
+     </p>
+
+     <p align="center">
+      <img src="images/boolean2.png">
+     </p>
+   
  * **_leeChar_**: Devuelve el dato ingresado a un valor **_char_**. Dado que **_JOptionPane.showInputDialog_** permite el ingreso de una cadena de caracteres y no es posible          limitar la longitud sin modificar el comportamiento por defecto.
     
     **_Firma:_**
@@ -123,6 +178,14 @@
    datoChar = CapturaDatosGrafica.leeChar("Ingrese un valor char", "Captura dato char", 1);
    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoChar, "Captura valor char");
    ```
+   
+   <p align="center">
+      <img src="images/char1.png">
+    </p>
+
+    <p align="center">
+     <img src="images/char2.png">
+    </p>
      
  * **_leeString_**: Devuelve el dato ingresado, controlando excepcion de tipo **_NullPointerException_** e ingresando en un ciclo hasta que se ingrese informacion en el cuadro        de dialogo.
     
@@ -139,6 +202,14 @@
    CapturaDatosGrafica.muestraMensaje("Dato ingresado es : " + datoString, "Captura valor String");
    ```
    
+   <p align="center">
+     <img src="images/string1.png">
+   </p>
+
+   <p align="center">
+    <img src="images/string2.png">
+   </p>
+    
  * **_muestraMensaje_**: Presenta un cuadro de mensaje al usuario, haciendo uso del metodo *__JOptionPane.showMessageDialog_**.
     
     **_Firma:_**
@@ -153,7 +224,15 @@
    nombre = CapturaDatosGrafica.leeString("Cual es tu nombre:", "Nombre", 1);
    CapturaDatosGrafica.muestraMensaje("Hola " + nombre, "Saludar");
    ```
-     
+   
+   <p align="center">
+     <img src="images/nombre1.png">
+   </p>
+
+   <p align="center">
+    <img src="images/nombre2.png">
+   </p>
+   
  * **_presentaMenu_**: Presenta cuadro de dialogo con un menu de opciones.
     
     **_Firma:_**
@@ -178,3 +257,15 @@
 
     opcion = CapturaDatosGrafica.presentaMenu(menuOpciones, "Menu de opciones", 1, 10);
     ```
+   
+   <p align="center">
+     <img src="images/menu.png">
+   </p>
+
+   <p align="center">
+    <img src="images/menu2.png">
+   </p>
+   
+   <p align="center">
+    <img src="images/menu3.png">
+   </p>
